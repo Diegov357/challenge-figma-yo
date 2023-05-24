@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: max-content;
+}
+
+.navebar {
+    display: flex;
+    flex-direction: row;
+    height: 144px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #30343F;
+}
+
+.logo {
+    height: 65.19px;
+    width: 372px;
+    padding-top: 3%;
+    padding-left: 9%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6%;
+    margin-left: 500px;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 30px;
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.navebar a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+.carrito {
+    margin-left: 2%;
+    margin-top: 4%;
+}
