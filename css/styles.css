@@ -1,19 +1,27 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
+*, ::after, ::before {
+    box-sizing: content-box !important;
+}
+
+
 body {
-    width: max-content;
+ margin: 0;
+ padding: 0;
+ width: 100%;
 }
 
 /*HEADER*/
 
 .navebar {
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 144px;
-    width: 100%;
+    width: 100% ;
     border-radius: 0px;
     background-color: #30343F;
 }
@@ -27,19 +35,21 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 6%;
-    margin-left: 400px;
+    margin-left: 340px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav li {
-    margin-right: 30px;
-    margin-top: 10px;
+    margin-right: 40px;
+    margin-top: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+    padding-left: 4px ;
 }
 
 .navebar a:link, a:visited, a:active {
@@ -47,25 +57,45 @@ body {
 }
 
 .carrito {
-    margin-left: 2%;
-    margin-top: 4%;
-    margin-right: 50px;
+    padding-right: 2%;
+    padding-top: 54px;
+    border: none; 
 }
 
 .carrito button {
+    background-color: transparent;
     border: none;
 }
 
-.dropdown button {
-
+.btn-secondary {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    rotate: 270deg;
+    padding: 0;
 }
 
 .dropdown {
+    position: relative;
+    right: 35px;
+    margin-top: 10px;
     overflow: hidden;
-    width: 130px;
-    height: 300px;
-    list-style: none;
 }
+
+ul.dropdown-menu.dropdown-menu-dark.show {
+    position: relative !important;
+    height: 200px;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
 
 /*MAIN*/
 
@@ -74,10 +104,12 @@ body {
 .publi {
     text-justify: center;
     text-align: start;
+    width: 100%;
 }
 
 .banner img {
     position: relative;
+    width: 100%;
 }
 
 #h1ban {
@@ -126,8 +158,21 @@ body {
     margin-top: 40px;
 }
 
+.producto2 {
+    display: flex;
+    flex-direction: row;
+}
+
 .imgProducIndex img {
-    position: absolute;
+    position: relative;
+    right: 150px;
+    width: 600px;
+    height: 600px;
+}
+
+.imgProducIndex2 img {
+    position: relative;
+    left: 10px;
     width: 600px;
     height: 600px;
 }
@@ -136,6 +181,13 @@ body {
     padding: 0;
     height: 600px;
     width: 780px;
+}
+
+.textproduc2 {
+    margin: 0;
+    height: 600px;
+    width: 300px;
+    justify-content: flex-start;
 }
 
 #h1produc {
@@ -191,19 +243,6 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-}
-
-.imgProducIndex img {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-}
-
-.textproduc2 {
-    margin-left: 550px;
-    padding: 0;
-    height: 600px;
-    width: 740px;
 }
 
 /*LANZAMIENTOS*/
@@ -314,6 +353,7 @@ body {
     flex-direction: row;
     width: 100%; 
     background: #30343F;
+    box-sizing: content-box !important;
 }
 
 .links-foot {
@@ -347,7 +387,7 @@ body {
 
 .logos {
     padding-top: 100px ;
-    padding-left: 200px;
+    margin-left: 200px;
 }
 
 .logos img{
