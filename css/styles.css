@@ -157,42 +157,14 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     margin-top: 40px;
 }
 
-.producto2 {
-    display: flex;
-    flex-direction: row;
-}
-
-.imgProducIndex img {
-    position: relative;
-    right: 150px;
-    width: 600px;
-    height: 600px;
-}
-
-.imgProducIndex2 img {
-    position: relative;
-    left: 10px;
-    width: 600px;
-    height: 600px;
-}
-
 .textproduc {
     padding: 0;
     height: 600px;
-    width: 780px;
-}
-
-.textproduc2 {
-    margin: 0;
-    height: 600px;
-    width: 300px;
-    justify-content: flex-start;
+    margin-left: 70px;
+    margin-top: 120px;
 }
 
 #h1produc {
-    position: absolute;
-    padding-top: 160px;
-    padding-left: 70px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -202,9 +174,6 @@ ul.dropdown-menu.dropdown-menu-dark.show {
 }
 
 #pproduc {
-    position: absolute;
-    padding-top: 274px;
-    padding-left: 70px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -214,9 +183,6 @@ ul.dropdown-menu.dropdown-menu-dark.show {
 }
 
 #linea {
-    position: absolute;
-    margin-top: 360px;
-    margin-left: 70px;
     width: 645px;
     height: 0px;
     border: 2px solid #FF3333;
@@ -224,8 +190,6 @@ ul.dropdown-menu.dropdown-menu-dark.show {
 
 .botproduc {
     position: absolute;
-    margin-top: 400px;
-    margin-left: 70px;
     width: 291.81px;
     height: 65px;  
     background: #30343F;
@@ -236,12 +200,152 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
-.producto {
+.imgProducIndex {
+    justify-items: start;
+    margin-right: 100px;
+}
+
+
+@media (max-width: 1320px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .textproduc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: 600px;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    .botproduc {
+        margin-top: 220px;
+    }
+
+    .imgProducIndex img {
+        margin-top: -300px;
+        margin-left: 100px;
+        width: 550px;
+    }
+
+    .producto2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textproduc2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .imgProducIndex2 img {
+        width: 550px;
+    }
+
+    .lanzamientos {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .lanz {
+        margin-left: 70px !important;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-foot a {
+        margin-left: 200px;
+        font-size: 40px;
+    }
+    
+}
+
+.producto2 {
+    margin: 0;
+    justify-content: flex-start;
     display: flex;
-    flex-direction: row;
-    margin-top: 40px;
+}
+
+.textproduc2 {
+    justify-content: flex-start;
+    margin-top: 200px;
+}
+
+#h1produc2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+#pproduc2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #4F4F4F;    
+}
+
+#linea2 {
+    width: 645px;
+    height: 0px;
+    border: 2px solid #FF3333;
+}
+
+.botproduc2 {
+    width: 291.81px;
+    height: 65px;  
+    background: #30343F;
+    border-radius: 50px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.imgProducIndex2 img {
+    position: relative;
+    left: 10px;
+    width: 600px;
+    height: 600px;
 }
 
 /*LANZAMIENTOS*/
@@ -262,6 +366,7 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     flex-direction: row;
     margin-top: 70px;
     margin-left: 70px;
+    margin-right: 70px;
 }
 
 .lanzamientos a {
@@ -274,7 +379,7 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     width: 359.97px;
     height: 512px;
     background: #FFFFFF;
-    margin: 30px;
+    margin: 10px;
 }
 
 .lanzimg {
