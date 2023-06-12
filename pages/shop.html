@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>FunkoShop</title>
+</head>
+
+<body>
+<header>
+<div class="navebar">
+    <div class="logo">
+        <a href="../index.html"><img src="../imagenes/Frame.svg" alt="logo"></a>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <a href="../index.html"><li id="shop">HOME</li></a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  < 
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">CARRITO</a></li>
+                  <li><a class="dropdown-item" href="#">REGISTRO</a></li>
+                  <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                </ul>
+              </div>
+            <a href="../pages/contact.html"><li id="contacto">CONTACTO</li></a>
+            <a href="../pages/login.html"><li id="login">LOGIN</li></a>
+        </ul>
+    </div>
+
+    <div class="carrito">
+        <div>
+       <button><img id="carrimg" src="../imagenes/Carrito.png" alt="carrito"></button>
+        </div>
+    </div>
+</div>
+</header>
+
+<main>
+    <div class="sidebar">
+        <form action="../../form-result.php" method="post" target="_blank">
+            <p id="buscar">Buscar</p>
+            <input id="busqueda" type="search" name="busquedaproduct" placeholder="item o categoria">    
+            
+            <p id="ordenar">Ordenar por</p>
+
+            <div id="ordenarmenu" class="dropdownord">
+                <button class="btn btn-secondaryord dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mayor a menor
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+        
+            <p id="precio">Precio</p>
+            <div class="precio">
+            <p id="minMax">Min</p>
+            <input id="minprice" type="number" name="minprice" placeholder="0">
+            <p id="minMax">-</p>
+            <p id="minMax">Max</p>
+            <input id="maxprice" type="number" name="maxprice" placeholder="0">
+            </div>
+            <p id="filtrar">Filtrar</p>
+            <div class="cbox">
+            <label><input type="checkbox" id="cbox1" value="first_checkbox">NUEVOS</label><br>
+            <label><input type="checkbox" id="cbox2" value="first_checkbox">OFERTAS</label><br>
+            <label><input type="checkbox" id="cbox3" value="first_checkbox">EDICIÓN ESPECIAL</label><br>
+            <label><input type="checkbox" id="cbox4" value="first_checkbox">FAVORITOS</label><br>
+            </div>
+          </form>
+
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="links-foot">
+        <a href="../tp-challenge-FIGMA/pages/shop.html" class="shop">SHOP</a>
+        <a href="../tp-challenge-FIGMA/pages/register.html" class="register">REGISTRARSE</a>
+        <a href="../tp-challenge-FIGMA/pages/login.html" class="login">INGRESAR</a>
+        <a href="../tp-challenge-FIGMA/pages/contact.html" class="contact">CONTACTO</a>
+        </div>
+
+        <p class="copyright">All rights reserved 2022 - Funkoshop &copy;</p>
+
+        <div class="logos">
+          <img src="../imagenes/Logo.png" alt="logo" class="logo">
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="scripts/products.json"></script>
+<script src="scripts/script1.js"></script>
+</body>
+
+</html>
