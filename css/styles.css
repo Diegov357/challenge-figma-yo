@@ -617,16 +617,15 @@ ul.dropdown-menu.dropdown-menu-dark.show {
 
 .sidebar {
     width: 322px;
+    padding-top: 70px;
+    padding-left: 110px;
 }
 
 #buscar {
-    width: 99px;
-    height: 29px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 24px;
-    line-height: 29px;
     color: #111111;
     text-transform: uppercase;
 }
