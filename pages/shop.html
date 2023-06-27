@@ -49,23 +49,23 @@
 <main>
     <div class="sidebar">
         <form action="../../form-result.php" method="post" target="_blank">
-            <p id="buscar">Buscar</p>
+            <p class="inpSidebar">Buscar</p>
             <input id="busqueda" type="search" name="busquedaproduct" placeholder="item o categoria">    
             
-            <p id="ordenar">Ordenar por</p>
+            <p class="inpSidebar">Ordenar por</p>
 
-            <div id="ordenarmenu" class="dropdownord">
-                <button class="btn btn-secondaryord dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div id="ordenar" class="dropdownord">
+                <button class="btn btn-secondaryord dropdown-toggle" type="button" id="busqueda" data-bs-toggle="dropdown" aria-expanded="false">
                   Mayor a menor
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Menor a mayor</a></li>
+                  <li><a class="dropdown-item" href="#">Por nombre</a></li>
+                  <li><a class="dropdown-item" href="#">Por precio</a></li>
                 </ul>
               </div>
         
-            <p id="precio">Precio</p>
+            <p class="inpSidebar">Precio</p>
             <div class="precio">
             <p id="minMax">Min</p>
             <input id="minprice" type="number" name="minprice" placeholder="0">
@@ -73,7 +73,7 @@
             <p id="minMax">Max</p>
             <input id="maxprice" type="number" name="maxprice" placeholder="0">
             </div>
-            <p id="filtrar">Filtrar</p>
+            <p class="inpSidebar">Filtrar</p>
             <div class="cbox">
             <label><input type="checkbox" id="cbox1" value="first_checkbox">NUEVOS</label><br>
             <label><input type="checkbox" id="cbox2" value="first_checkbox">OFERTAS</label><br>
@@ -81,8 +81,6 @@
             <label><input type="checkbox" id="cbox4" value="first_checkbox">FAVORITOS</label><br>
             </div>
           </form>
-
-
 </main>
 
 <footer>

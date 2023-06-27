@@ -621,38 +621,26 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     padding-left: 110px;
 }
 
-#buscar {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 24px;
-    color: #111111;
-    text-transform: uppercase;
-}
-
 #busqueda {
-    box-sizing: border-box;
-    width: 243.03px;
-    height: 44.28px;
-    border: 2px solid #30343F;
+    width: 243px;
+    height: 44px;
     border-radius: 6px;
-    padding: 10px;
+    border: 2px solid #30343F;
 }
 
-#busqueda placeholder {
-    width: 155px;
-    height: 24px;
+
+input#busqueda {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #B9B9B9;
+    padding-left: 10px;
 }
 
-#ordenar {
-    width: 172px;
-    height: 29px;
+.inpSidebar {
+    padding-top: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -662,22 +650,34 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     text-transform: uppercase;
 }
 
-.dropdownord {    
-    box-sizing: border-box;
-    object-fit: cover;
-    width: 243.03px;
-    height: 44.28px;
+button#busqueda.btn.btn-secondaryord {
+    width: 243px;
+    height: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     color: #B9B9B9;
-    background-color: #FFFFFF;
-    border: 2px solid #30343F;
-    border-radius: 6px;
+    padding-left: 10px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .precio {
     display: flex;
     flex-direction: row;
@@ -799,3 +799,5 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: start;
     display: flex;
 }
+
+*/
