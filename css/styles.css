@@ -92,8 +92,8 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     height: 200px;
 }
 
-.dropdown-toggle::after {
-    content: none !important;
+.dropdown>.dropdown-toggle::after {
+    content: none!important;
 }
 
 
@@ -626,6 +626,7 @@ ul.dropdown-menu.dropdown-menu-dark.show {
     height: 44px;
     border-radius: 6px;
     border: 2px solid #30343F;
+    color: #B9B9B9;
 }
 
 
@@ -635,7 +636,6 @@ input#busqueda {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #B9B9B9;
     padding-left: 10px;
 }
 
@@ -648,6 +648,7 @@ input#busqueda {
     line-height: 29px;
     color: #111111;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 button#busqueda.btn.btn-secondaryord {
@@ -665,34 +666,31 @@ button#busqueda.btn.btn-secondaryord {
     display: flex;
 }
 
+.dropdown-toggle::after {
+    margin-left: 80px !important;
+    color: #111111 !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*
 .precio {
     display: flex;
     flex-direction: row;
 }
 
-#precio {
-    width: 88px;
-    height: 29px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+#price {
+    width: 59.142578125px;
+    height: 27.51931381225586px;
+    border-radius: 6px;
+    border: solid 2px #111111;
     color: #111111;
-    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 14px;
+    text-align: center;
+}
+
+input#price {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;    
 }
 
 #minMax {
@@ -703,61 +701,10 @@ button#busqueda.btn.btn-secondaryord {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    font-weight: bold;
     color: #111111;
     text-transform: uppercase;
-    padding-right: 10px;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-#max {
-    width: 37px;
-    height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #111111;
-    text-transform: uppercase;
-}
-
-#guion {
-    width: 8px;
-    height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #111111;
-}
-
-#minprice {
-    box-sizing: border-box;
-    width: 59.14px;
-    height: 27.52px;
-    border: 2px solid #30343F;
-    border-radius: 6px;
-    text-align: center;
-}
-
-#maxprice {
-    box-sizing: border-box;
-    width: 59.14px;
-    height: 27.52px;
-    border: 2px solid #30343F;
-    border-radius: 6px;
-    text-align: center;
-}
-
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer;
-    color: #B9B9B9;
+    padding-top: 8px;
 }
 
 #filtrar {
@@ -772,8 +719,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-transform: uppercase;
 }
 
- .cbox {
-    display: inline-block;
+.cbox {
     width: 300px;
 }
 
@@ -787,17 +733,331 @@ input[type=number]::-webkit-outer-spin-button {
     border: 2px solid #30343F;
     border-radius: 6px;
     margin-right: 6px;
+    padding: 0 !important;
 }
 
-.cbox label {
+.cbox>label {
+    display: flex;
+    flex-direction: row;
     font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: #111111;
-    text-align: start;
-    justify-content: start;
+    margin-bottom: 0 !important;
+}
+.cbox>p{
+    padding: 0;
+}
+
+/* SHOP */
+
+main{
     display: flex;
+    flex-direction: row;
+}
+
+.sProduc {
+    width: 200px;
+    height: 512px;   
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1SProduc1 {
+    width: 700px;
+    height: 54px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.sProduc1img {
+    width: 300px;
+    height: 352px;
+}
+
+#pSProduc1 {
+    width: 200px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+#h1SProduc1 {
+    width: 277.13px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+}
+
+#priceSProduc1 {
+    width: 88.97px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+#promoSProduc1 {
+    width: 141.12px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1D84B5;
+}
+
+#nuevo2 {
+    width: 96.13px;
+    height: 30px;
+    background: #FF3333;
+}
+
+
+/*
+.h1SProduc1 {
+    position: absolute;
+    width: 700px;
+    height: 54px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.sProduc1 {
+    position: absolute;
+    width: 200px;
+    height: 512px;   
+    background: #FFFFFF;
+}
+
+.sProduc1img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/trooper-1\ 1.png);
+}
+
+#pSProduc1 {
+    position: absolute;
+    width: 200px;
+    height: 17px;
+    top: 380px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    text-transform: uppercase;
+    left: 50px;
+}
+
+#h1SProduc1 {
+    position: absolute;
+    width: 277.13px;
+    height: 22px;
+    top: 410px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    left: 50px;
+}
+
+#priceSProduc1 {
+    position: absolute;
+    width: 88.97px;
+    height: 19px;
+    top: 440px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    left: 50px;
+}
+
+#promoSProduc1 {
+    position: absolute;
+    width: 141.12px;
+    height: 15px;
+    top: 470px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1D84B5;
+    left: 50px;
+}
+
+#nuevo2 {
+    position: absolute;
+    width: 96.13px;
+    height: 30px;
+    left: 250px;
+    background: #FF3333;
+}
+
+.sProduc2 {
+    position: absolute;
+    width: 200px;
+    height: 352px;
+    left: 700px;
+    top: 212px;
+    background: #FFFFFF;
+    padding: 0;
+}
+
+.sProduc2img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/pidgeotto-1\ 1.png);
+}
+
+.sProduc3 {
+    position: absolute;
+    width: 200px;
+    height: 512px;
+    left: 1050px;
+    top: 212px;
+    background: #FFFFFF;
+}
+
+.sProduc3img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/luna-1\ 1.png);
+}
+
+.sProduc4 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 367.53px;
+    top: 760px;
+    background: #FFFFFF;
+}
+
+.sProduc4img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/trooper-1\ 1.png);
+}
+
+.sProduc5 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 696.32px;
+    top: 760px;
+    background: #FFFFFF;
+}
+
+.sProduc5img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/pidgeotto-1\ 1.png);
+}
+
+.sProduc6 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 1025.12px;
+    top: 760px;
+    background: #FFFFFF;
+}
+
+.sProduc6img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/luna-1\ 1.png);
+}
+
+.sProduc7 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 367.53px;
+    top: 1308px;
+    background: #FFFFFF;
+}
+
+.sProduc7img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/trooper-1\ 1.png);
+}
+
+.sProduc8 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 696.32px;
+    top: 1308px;
+    background: #FFFFFF;
+}
+
+.sProduc8img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/pidgeotto-1\ 1.png);
+}
+
+.sProduc9 {
+    position: absolute;
+    width: 304.01px;
+    height: 512px;
+    left: 1025.12px;
+    top: 1308px;
+    background: #FFFFFF;
+}
+
+.sProduc9img {
+    position: absolute;
+    width: 300px;
+    height: 352px;
+    background: url(../imagenes/luna-1\ 1.png);
 }
 
 */
+
+
+
+
